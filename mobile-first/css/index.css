@@ -74,12 +74,10 @@ h1, h2, h3, h4, h5 {
 /*---------------------- HEADER & NAV ----------------------*/
 header {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
 nav a{
-
 	text-decoration: none;
 	color: gray;
 }
@@ -258,6 +256,68 @@ background-color: orange;
 	margin-bottom: 4%;
 	text-align: center;
 }
+
+/*---------------------- SERVICES.HTML BREAK POINTS STARTS HERE ----------------------*/
+
+@media (max-width: 500px) {
+	.large-container-box {
+		width: 100%;
+	}
+	.services-top {
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		text-align: center;
+	}
+	h1.services-top-section {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.bottom-services-section {
+		display: flex;
+		justify-content: center;
+		flex-flow: column-reverse;
+
+	}
+	.large-container-box-bottom {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		width: 100%;
+	}
+	.large-container-box-bottom{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.bottom-img {
+		width: 100%;
+	}
+	.bottom-img .services-info-img {
+		height: 40vh;
+		width: 100%;
+	}
+	.large-container-box {
+		text-align: center;
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		display: flex;
+		justify-content: center;
+	}
+	nav a {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+}
+/*---------------------- SERVICES.HTML BREAK POINTS ENDS HERE ----------------------*/
+
 /*---------------------- INDEX.HTML BREAK POINTS START HERE ----------------------*/
 @media (min-width: 801px) {
 	.break {
