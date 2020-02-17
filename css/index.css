@@ -1,3 +1,416 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+
+/*--------------------------------------- INDEX.HTML START! ---------------------------------------*/
+/*------------ WRAPPER ------------*/
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*---------------------- HEADER & NAV ----------------------*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a{
+
+	text-decoration: none;
+	color: gray;
+}
+
+nav a:hover{
+color: white;
+background-color: orange;
+}
+
+/*---------------------- SECTION 1 ----------------------*/
+.section-One {
+	margin-top: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.section-One .button-1 {
+	text-align: center;
+	background-color: white;
+	border: 1px black solid;
+	width: 120px;
+	height: 40px;
+}
+
+.button-1:hover {
+	background-color: orange;
+}
+
+.section-One div p {
+	font-family: 'bangers';
+	font-size: 70px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+/*---------------------- FEATURE-SECTION ----------------------*/
+
+.feature-Section .box-Container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.feature-Section .box-top {
+	width: 49%;
+}
+
+.feature-Section .box-top {
+	width: 49%;
+}
+
+.feature-Section .box-bottom {
+	width: 30%;
+}
+
+.feature-Section .box-Container {
+	display: flex;
+}
+
+.feature-Section .middle-img {
+	margin: 30px auto;
+	width: 100%; 
+}
+
+/*---------------------- CONTACT-SECTION ----------------------*/
+
+.contact-Section footer .contact-1{
+	display: flex;
+	flex-flow: column; 
+	width: 30%;
+	justify-content: space-around;
+}
+
+.copyright {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.info {
+	line-height: 30px;
+}
+
+.brk {
+	text-align: center;
+	margin: 30px 0;
+	width: 900px;
+}
+/*<----------------------------------- END OF HTML.INDEX ----------------------------------->*/
+
+/*<----------------------------------- START OF SERVICES.INDEX ----------------------------------->*/
+
+.services-header-img {
+	width: 100%;
+}
+
+/*---------------------- SERVICES TOP SECTION ----------------------*/
+
+.services-top-section {
+	margin-top: 3%;
+	display: flex;
+	font-size: 150%;
+}
+
+.services-top {
+	margin-bottom: 3%;
+}
+
+/*---------------------- SERVICES BOXES START ----------------------*/
+.large-container {
+	margin-top: -1%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin-bottom: 4%;
+}
+
+.large-container-box {
+	margin-top: 4%;
+	background-color: #ebedf0;
+	border-radius: 1%;
+	padding: 2%;
+	width: 48%;
+	height: 40%;
+	border: 1px solid black;
+}
+
+.large-container-box .btn-2 {
+	display: inline-block;
+	margin-top: 5%;
+	background-color: white;
+	border: black 1px solid;
+	border-radius: 5%;
+	border-width: 40%;
+	text-align: center;
+	padding: 2.5%;
+	width: 40%;
+}
+
+.large-container-box .btn-2:hover {
+	background-color: orange;
+}
+
+/*---------------------- SERVICES BOTTOM INFO START ----------------------*/
+
+.bottom-services-section {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.large-container-box-bottom {
+	margin-top: 4%;
+	width: 48%;
+	height: 30%;
+}
+
+.services-info-img {
+	width: 100%;
+	height: 100%;
+}
+
+.bottom-img {
+	margin-top: 4%;
+	width: 48%;
+}
+
+.large-container-box-bottom ul {
+	margin-left: 5%;
+}
+
+.services-footer {
+	margin-top: 8%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+
+/*---------------------- BREAK POINTS START HERE ----------------------*/
+@media (min-width: 801px) {
+	.break {
+		display: none;
+	}
+	header nav {
+		width: 100%;
+	}
+	header nav a {
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 800px){
+	.container {
+		width: 90%;
+	}
+	.break {
+		display: none;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		flex-flow: column-reverse;
+		flex-wrap: wrap;
+	}
+	header nav {
+		margin-top: 5%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+	header nav a {
+		margin-left: 4%;
+		margin-right: 4%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.section-One img{
+		display: none;
+	}
+	.section-One{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+	.section-One .button-1 {
+		text-align: center;
+		background-color: white;
+		border: 1px black solid;
+		width: 50%;
+		height: 35px;
+	}
+	.feature-Section {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.contact-Section {
+		margin-top: 5%;
+	}
+}
+
+@media (max-width: 500px){
+	.container {
+		width: 90%;
+	}
+
+	header {
+		display: flex;
+		flex-flow: column-reverse wrap;
+		justify-content: center space-around;
+		align-content: center;
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	header nav a{
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	header .logo {
+		display: inline-block;
+	}
+
+	.section-One img {
+		display: none;
+	}
+
+	.section-One {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-flow: column;
+		margin-bottom: 8%;
+	}
+
+	.feature-Section .box-Container {
+		display: flex;
+		flex-flow: column;
+		justify-content: center space-between;
+	}
+
+	.feature-Section .box-top {
+		width: 100%;
+		margin-bottom: 8%;
+		margin-top: 8%;
+	}
+
+	.feature-Section .box-bottom {
+		width: 100%;
+		margin-bottom: 8%;
+		margin-top: 8%;
+	}
+
+	.contact-Section footer{
+		margin-top: 8%;
+	}
+
+	.section-One .button-1 {
+		text-align: center;
+		background-color: white;
+		border: 1px black solid;
+		width: 50%;
+		height: 35px;
+	}
+
+	.break {
+		width: 100%;
+		display: block;
+	}
+}
 
 
